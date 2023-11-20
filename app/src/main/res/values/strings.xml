@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Sensores</string>
+    <string name="hello_world">From the Square world,\nHello, %1$s!</string>
+    <string name="sensors">Nombre</string>
+    <string name="Humedad">La Humedad En El Area Es</string>
+    <string name="Presion">La Presión En El Area Es</string>
+    <string name="Temperatura">La Temperatura En El Area Es</string>
+    <string name="Luz">La Luz En El Area Es</string>
+    <string name="Ubicacion">La Ubicación es</string>
+    <string name="longitud">La Longitud Es</string>
+    <string name="latitud">La Latitud Es</string>
+</resources>

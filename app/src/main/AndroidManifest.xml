@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-feature android:name="android.hardware.type.watch" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature android:name="android.hardware.sensor.relative_humidity" />
+
+    <uses-feature android:name="android.hardware.location.gps"/>
+
+    <uses-permission android:name="android.permission.ACCESS_AMBIENT_TEMPERATURE" />
+    <uses-feature android:name="android.hardware.sensor.ambient_temperature" />
+
+    <uses-permission android:name="android.permission.ACCESS_PRESSURE" />
+
+    <uses-permission android:name="android.permission.ACCESS_LIGHTS" />
+    <uses-feature android:name="android.hardware.sensor.light" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.DeviceDefault">
+        <uses-library
+            android:name="com.google.android.wearable"
+            android:required="true" />
+
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+        <meta-data
+            android:name="com.google.android.wearable.standalone"
+            android:value="true" />
+        <activity
+            android:name="com.example.sensores.presentation.Temperature"
+            android:exported="false" />
+        <activity
+            android:name="com.example.sensores.presentation.Pressure"
+            android:exported="false" />
+        <activity
+            android:name="com.example.sensores.presentation.Ligth"
+            android:exported="false" />
+        <activity
+            android:name="com.example.sensores.presentation.Humity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.sensores.presentation.GPS"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.DeviceDefault">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
