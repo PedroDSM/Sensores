@@ -22,16 +22,21 @@
             android:gravity="center"
             android:textSize="10dp"></TextView>
 
-        <TextView
+        <EditText
             android:id="@+id/luz"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="lux"
             android:gravity="center"
             android:textColor="@color/white"
-            android:textSize="20dp"></TextView>
+            android:textSize="20dp" />
 
+        <Button
+            android:id="@+id/enviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Enviar" />
     </LinearLayout>
 
 </LinearLayout>

@@ -21,23 +21,17 @@
             android:text="@string/Humedad"
             android:textColor="@color/white"
             android:gravity="center"
-            android:textSize="10dp" />
+            android:textSize="30dp" />
 
-        <EditText
+        <TextView
             android:id="@+id/humedad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:gravity="center"
             android:textColor="@color/white"
-            android:textSize="20dp" />
-
-        <Button
-            android:id="@+id/enviar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Enviar" />
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="%"
+            android:textSize="30dp" />
 
     </LinearLayout>
 

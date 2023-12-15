@@ -16,3 +16,4 @@ dependencyResolutionManagement {
 rootProject.name = "Sensores"
 include(":app")
 include(":sensorescel")
+include(":global")
